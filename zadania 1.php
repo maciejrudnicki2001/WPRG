@@ -9,7 +9,23 @@ $zmienna = 4;
 $srednica = $zmienna*2;
 echo("$srednica, tyle wynosi średnica tego koła");
 #zadanie trzecie
+echo("<br>");
+echo("<br>");
+function censorship_machine($sentence)
+{
+    $dictionary = array("maslo","brzydkie","slowo","czasem");
+    foreach ($dictionary as $word)
+    {
+        $size=strlen($word);
+        $censorship='';
+        for ($j=0; $j<$size; $j++)
+            $censorship .= '*';
 
+        $sentence = str_replace($word,$censorship,$sentence);
+    }
+    return $sentence;
+}
+echo censorship_machine("maslo jest pyszne ale czasem wymsknie mi sie brzydkie słowo");
 #zadanie czwarte
 echo("<br>");
 echo("<br>");
