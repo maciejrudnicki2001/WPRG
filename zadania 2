@@ -1,1 +1,31 @@
+<?php
 
+#zadanie pierwsze
+function which_table($a)
+{
+	$tablica[0] = rand();
+	$tablica[1] = rand();
+	$tablica[2] = rand();
+	echo $tablica[$a];
+}
+which_table(2);
+echo("<br>");
+echo("<br>");
+which_table(0);
+echo("<br>");
+echo("<br>");
+which_table(1);
+
+#zadanie drugie
+echo("<br>");
+echo("<br>");
+function from_which_countr_i_am($a)
+{
+	$tablica["Polska"]="Polak";
+	$tablica["Niemcy"]="Niemiec";
+	$tablica["Rosja"]="Rosjanin";
+	$tablica["Szwecja"]="Szwed";
+	echo $tablica[$a];
+}
+from_which_countr_i_am("Niemcy");
+?>
