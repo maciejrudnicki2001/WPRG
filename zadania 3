@@ -1,1 +1,30 @@
+<table>
 
+<?php
+#zadanie_trzecie
+$a = 2137;
+for ($height = 1; $height <= $a; $height++) {
+ echo "<tr>\n";
+
+ for ($width = 1; $width <= $a; $width++) {
+   echo "<td>";
+   echo $width * $height;
+   echo "</td>\n";
+ }
+
+ echo "</tr>\n";
+}
+?>
+
+</table>
+<?php
+#zadanie_drugie
+$a = 3;
+$i = 0;
+for($i; $i<=$a+1; $i++)
+{
+    echo rand(1, 6)."<br>";
+    $i++;
+}
+
+?>
