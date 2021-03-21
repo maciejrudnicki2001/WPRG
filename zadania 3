@@ -1,4 +1,43 @@
-<table>
+
+<?php
+#zadanie_pierwsze_niedokończone
+function Which_table_biggest_number()
+{
+	$tablica[0] = rand();
+	$tablica[1] = rand();
+	$tablica[2] = rand();
+	$a = 0;
+	$b = 1;
+		echo $tablica[0];
+	echo("<br>");
+	echo("<br>");
+	echo $tablica[1];
+	echo("<br>");
+	echo("<br>");
+	echo $tablica[2];
+	echo("<br>");
+	echo("<br>");
+	while ($b <= 2) {
+			if ($tablica[$b] > $tablica[$a]){
+
+
+
+				$tablica[$a]=$tablica[$b];
+
+
+		
+		
+	}
+	$b++;	
+	
+
+}
+	echo("<br>");
+	echo("<br>");
+	echo $tablica[0];
+}
+Which_table_biggest_number();
+?><table>
 
 <?php
 #zadanie_trzecie
