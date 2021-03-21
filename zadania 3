@@ -71,3 +71,24 @@ for($i; $i<=$a+1; $i++)
 }
 
 ?>
+#zadanie_ostatnie
+<?php
+#zadanie_pierwsze
+function is_primary($x)
+{
+	$i = 2;
+	while ($i <= $x){
+		if ($i == $x){
+			echo ("That's  a primary number");
+			break;
+			}
+		else if ($x % $i == 0){
+			echo ("This is not primary number");
+			break;
+		}
+		$i++;
+	}
+}
+
+is_primary(3);
+?>
