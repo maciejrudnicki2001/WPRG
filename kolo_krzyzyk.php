@@ -44,7 +44,7 @@ if(isset($_POST['button'])) // wykonuje sie po wcisnieciu inputa
 {
     if (!empty($_POST['Kolumna']))
     {
-        if (!empty($_POST['Wiersz'])) //jezeli formularz nie jest pusty zeby sie nie zjebalo
+        if (!empty($_POST['Wiersz'])) 
         {
             $wiersz = $_POST['Wiersz']-1;
             $kolumna = $_POST['Kolumna']-1;
