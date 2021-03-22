@@ -42,6 +42,27 @@ function Which_table_biggest_number()
 Which_table_biggest_number();
 ?>
 ?><table>
+//zadanie_pierwsze_foreach
+Which_table_biggest_number4($tablica)
+{
+	$a = 0;
+    $b = 1;
+	$c = 2;
+	foreach ($tablica as $i)
+		{
+			if ($tablica[$b] > $tablica[$a])
+			{
+				$tablica[$a]=$tablica[$b];
+			}
+			if ($tablica[$c] > $tablica[$b])
+			{
+				$tablica[$b]=$tablica[$c];
+			}
+        }
+    echo("<br>");
+    echo("<br>");
+    echo "FOREACH: ". $tablica[0];
+}
 
 <?php
 #zadanie_trzecie
