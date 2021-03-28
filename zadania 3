@@ -16,7 +16,7 @@ function Which_table_biggest_number()
 	echo $tablica[2];
 	echo("<br>");
 	echo("<br>");
-		//while ($b <= 2)(trzeba dodać pod koniec $b++ {
+		//while ($b <= 2)(trzeba dodać pod koniec $b++) {
 		//for ($b = 1; $b <= 2; $b++){
 		do {
 			if ($tablica[$b] > $tablica[$a]){
