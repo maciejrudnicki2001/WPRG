@@ -9,12 +9,7 @@ function which_table($a)
 	echo $tablica[$a];
 }
 which_table(2);
-echo("<br>");
-echo("<br>");
-which_table(0);
-echo("<br>");
-echo("<br>");
-which_table(1);
+
 
 #zadanie drugie
 echo("<br>");
