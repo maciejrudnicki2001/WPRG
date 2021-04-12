@@ -45,7 +45,7 @@ if(isset($_POST['button']))
 </form>
 
 <?php
-function is_first($number)
+function is_primary($number)
 {
     $is = true;
     for ($i=2;$i<$number-1;$i++)
@@ -80,7 +80,7 @@ if(isset($_POST['button']))
         {
             if ($_POST['a']>0)
             {
-                is_first($_POST['a']);
+                is_primary($_POST['a']);
             }
             else
             {
