@@ -1,4 +1,5 @@
 <?php
+// zrobione przez Maciej Rudnicki, Piotr Wiktorczyk i Bartosz Wołodźko
 function wygrana($tablica)
 {
 

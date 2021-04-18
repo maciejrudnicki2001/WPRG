@@ -1,0 +1,143 @@
+
+<?php
+
+if(isset($_POST['button']))
+{
+    if (!empty($_POST['a']))
+    {
+        if (!empty($_POST['b']))
+        {
+            switch ($_POST['wyb'])
+            {
+                case "Sum":
+                    echo $_POST['a']+$_POST['b'];
+                    break;
+                case "Multiplication":
+                    echo $_POST['a']*$_POST['b'];
+                    break;
+                case "Difference":
+                    echo $_POST['a']-$_POST['b'];
+                    break;
+                case "Division":
+                    echo $_POST['a']/$_POST['b'];
+                    break;
+
+            }
+
+        }
+    }
+}
+
+
+?>
+<form action="#" method="post" >
+    Number A: <input type="number" name="a"><br> </br>
+    Number B: <input type="number" name="b"><br></br>
+    Operation:
+    </br>
+        Sum:<input type="radio" name="wyb" value="Sum"></br>
+		Difference:<input type="radio" name="wyb" value="Difference"></br>
+        Multiplication:<input type="radio" name="wyb" value="Multiplication"></br>
+        Division: <input type="radio" name="wyb" value="Division"></br>
+    </br>
+    <button type="submit" name="button" formmethod="post">Send</button>
+</form>
+</form>
+
+<?php
+function is_primary($number)
+{
+    $is = true;
+    for ($i=2;$i<$number-1;$i++)
+    {
+        if ($number%$i==0)
+        {
+            $is = false;
+            break;
+        }
+
+    }
+
+
+    if ($is)
+    {
+        echo "This is primary number";
+    }
+    else
+    {
+        echo "Not a primary number";
+    }
+}
+
+
+
+if(isset($_POST['button']))
+{
+    if (!empty($_POST['a']))
+    {
+        $a=(int)$_POST['a'];
+        if ($a==$_POST['a'])
+        {
+            if ($_POST['a']>0)
+            {
+                is_primary($_POST['a']);
+            }
+            else
+            {
+                echo "That's not a positive number";
+            }
+        }
+    }
+}
+
+?>
+
+<form action="#" method="post" >
+    Number: <input type="number" name="a"><br> </br>
+
+
+    <button type="submit" name="button" formmethod="post">Send</button>
+</form>
+
+
+<form action="#" method="post" >
+    </br></br>
+    Rozpoczecie: <input type="date" name="beg"></br>
+    Zakonczenie: <input type="date" name="end"></br>
+    Ilosc os: <input type="number" name="how_many"></br>
+	Imie: <input type="text" name="name"></br>
+	Nazwisko: <input type="text" name="surname"></br>
+	Adres: <input type="text" name="adres"></br>
+	Numer Rachunku: <input type="number" name="card_num"></br>
+	E-mail: <input type="email" name="E-mail"></br>
+	Dodatkowe Wymagania: <input type="text" name="other"></br>
+	<p>Czy potrzeba łożka dla dziecka ?</p>
+
+
+<div>
+  <input type="checkbox" value="Yes" name="bed"
+         checked>
+  <label for="Tak">Tak</label>
+</div>
+<div>
+  <input type="checkbox" value="No" name="bed">
+  <label for="Nie">Nie</label>
+</div>
+
+
+    <button type="submit" name="button" formmethod="post">Wyślij</button>
+
+</form>
+<?php
+if (isset($_POST['button']))
+{
+    if (isset($_POST['beg'])&&isset($_POST['end'])&&isset($_POST['how_many'])&&isset($_POST['name'])&&isset($_POST['surname'])&&isset($_POST['adres'])&&isset($_POST['card_num'])&&isset($_POST['E-mail'])&&isset($_POST['other'])&&isset($_POST['bed']))
+    {
+        if ($_POST['beg']<$_POST['end'])
+        {
+            echo ($_POST['beg']),"</br>",($_POST['end']),"</br>",($_POST['how_many']),"</br>",($_POST['name']),"</br>",($_POST['surname']),"</br>",($_POST['adres']),"</br>",($_POST['card_num']),"</br>",($_POST['E-mail']),"</br>",($_POST['other']);
+
+		}	
+    }
+}
+?>
