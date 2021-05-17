@@ -1,6 +1,4 @@
 <?php
-     echo "jd";  
-
    
     if (isset($_POST['rejestruj']))
     {	
